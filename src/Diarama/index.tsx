@@ -26,7 +26,7 @@ const Diarama = observer(
       const {
         width = "100%",
         height = "100%",
-        perspective = "200px",
+        perspective = "250px",
         perspectiveOrigin = "50% 50%"
       } = this.props;
 

@@ -43,9 +43,6 @@ const StyledCeiling = styled.div<CeilingProps>`
 
 const Ceiling = observer(
   class Ceiling extends Component<CeilingProps> {
-    constructor(props: CeilingProps) {
-      super(props);
-    }
     render() {
       const {
         opacity = 1,

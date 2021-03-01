@@ -41,17 +41,14 @@ const StyledLeftWall = styled.div<LeftWallProps>`
 
 const LeftWall = observer(
   class LeftWall extends Component<LeftWallProps> {
-    constructor(props: LeftWallProps) {
-      super(props);
-    }
     render() {
       const {
         opacity = 1,
         backgroundSize = "cover",
         backgroundImage = `url(${aS.wallImage})`,
         backgroundRepeat = "no-repeat",
-        width = "100vw",
-        height = "100vh",
+        width = "100%",
+        height = "100%",
         zIndex = 5,
         direction,
         transform = "rotateY(271deg)",

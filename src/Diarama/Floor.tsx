@@ -45,9 +45,6 @@ const StyledFloor = styled.div<FloorProps>`
 
 const Floor = observer(
   class Floor extends Component<FloorProps> {
-    constructor(props: FloorProps) {
-      super(props);
-    }
     render() {
       const {
         opacity = 0.95,
@@ -55,7 +52,7 @@ const Floor = observer(
         backgroundImage = `url(${aS.wallImage})`,
         backgroundRepeat = "no-repeat",
         width = "100%",
-        height = "100vh",
+        height = "100%",
         zIndex = 5,
         direction,
         transform = "rotateX(89deg)",

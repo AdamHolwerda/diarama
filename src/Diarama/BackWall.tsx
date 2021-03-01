@@ -42,17 +42,14 @@ const StyledBackWall = styled.div<BackWallProps>`
 
 const BackWall = observer(
   class BackWall extends Component<BackWallProps> {
-    constructor(props: BackWallProps) {
-      super(props);
-    }
     render() {
       const {
         opacity = 1,
         backgroundSize = "cover",
         backgroundImage = `url(${aS.wallImage})`,
         backgroundRepeat = "no-repeat",
-        width = "100vw",
-        height = "100vh",
+        width = "100%",
+        height = "100%",
         zIndex = 5,
         direction,
         transform = "translateZ(-150px)",

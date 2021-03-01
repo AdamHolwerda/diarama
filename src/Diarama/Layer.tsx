@@ -32,7 +32,7 @@ const Layer = observer(
         position = "absolute",
         width = "100%",
         height = "100%",
-        transform = "translateZ(-50px)"
+        transform = "translateZ(-5%)"
       } = this.props;
 
       const defaultedProps = {
